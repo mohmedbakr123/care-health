@@ -1,0 +1,549 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background-color: rgb(42, 90, 233);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.logo1{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.list1{
+    float:right;
+    margin-right: 20px;
+}
+
+.header  li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: large;
+    margin-top: 15px;
+   
+}
+
+.header   li   a{
+   
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+/*//////////////////////////////////////////*/
+/*we are section*/
+.we-are{
+    margin-top: 60px;
+    width:100%;
+    height: 100vh;
+    background-image: url(../images/pexels-karolina-grabowska-4386466.jpg);
+    background-position: center;
+    background-size: cover;
+    right:0;
+    left: 0;
+    text-align: center;
+    padding-top: 100px;
+    position:relative;
+    
+}
+
+.we-are-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    text-align: center;
+}
+
+.we-are-t1{
+    letter-spacing: 2px;
+    font-size: 50px;
+    color:white;
+    margin-top: 100px;
+}
+
+.we-are-p1{
+    letter-spacing: 2px;
+    font-size:large;
+    display: inline-block;
+    margin:15px 0px;
+    color:white;
+    background-color: rgb(42, 90, 233);
+    
+}
+
+
+
+.we-are-btn{
+    background-color: rgb(42, 90, 233);
+    color:white;
+    width: 150px;
+    height:50px ;
+    text-align: center;
+    font-size: 20px;
+    padding-top:5px ;
+    padding-bottom:5px ;
+    border-color: rgb(42, 90, 233);
+    border-radius: 30px;
+    border:0;
+    
+}
+
+.btn2{
+    background-color: white;
+    color: black;
+    border-color: white;
+    margin-left: 20px;
+}
+
+.we-are-btn:hover{
+    opacity:0.6;
+}
+
+
+/*///////////////////////////////*/
+/*Welcome section*/
+.welcome-parent{
+    width:100%;
+}
+
+
+.welcome-title-div{
+    text-align: center;
+}
+
+.welcome-title-line{
+    background-color: blue;
+    width: 65px;
+    height: 3px;
+    margin-left: 710px;
+}
+
+
+.welcome-container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.welcome-content{
+    position: relative;
+}
+
+.welcome-item{
+    width:30%;
+    height:250px;
+    text-align: center;
+    border:1px;
+    border-style:groove;
+    border-color: black;
+    padding:20px 0px;
+    position: relative;
+    float: left;
+    
+}
+
+.center-of-welcome-item{
+    margin: 0 5%;
+}
+
+/* .welcome-item:hover  .welcome-overley{
+    visibility: visible;
+
+} */
+
+
+
+/* .welcome-overley{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    margin-bottom: 50px;
+    top:0;
+    visibility: hidden;
+    z-index: -1;
+} */
+
+
+
+.welcome-item i{
+    font-size: 20px;
+    color: rgb(42, 90, 233);
+    
+}
+.welcome-item-info{
+    line-height: 40px;
+}
+.welcome-item-info  a{
+    color:rgb(42, 90, 233);
+    text-decoration: none;
+
+}
+
+.welcome-item::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(42, 90, 233);
+    transition: 1s;
+    z-index: -1;
+}
+
+.welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+    
+}
+.welcome-item:hover h2{
+    color:white;
+}
+.welcome-item:hover p{
+    color:white;
+}
+
+.welcome-item:hover  i{
+    font-size: 29px;
+    color: black;
+}
+
+
+
+/* //////////////////////////// */
+/* online section */
+.online-title{
+    text-align: center;
+}
+.online-line{
+    margin-left:680px ;
+   width:60px;
+   height:6px;
+   background-color: rgb(42, 90, 233);
+}
+
+.online-container{
+    width:90%;
+    margin: auto;
+}
+
+
+.online-item-center{
+    margin:0 5%;
+}
+
+.online-item{
+    width:30%;
+    float:left;
+}
+.online-img{
+    width:90%;
+    margin: auto;
+   position: relative;
+}
+
+.online-img  img{
+    width: 100%;
+}
+
+.online-overley{
+    text-align: center;
+    width: 100%;
+    height:100%;
+    top:0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+
+}
+
+.online-item:hover .online-overley {
+    visibility: visible;
+}
+
+
+
+.online-overley   h3{
+    color:rgb(42, 90, 233);
+    
+}
+
+.online-overley   span{
+    color:white
+}
+
+.online-overley   a{
+    display: inline-block;
+    color:rgb(42, 90, 233);
+    font-size:large
+}
+
+.online-info{
+    padding: 30% 0 0 0;
+}
+
+/*////////////////////////*/
+
+/*team section*/
+
+.team-title{
+    text-align: center;
+}
+
+.team-title-line{
+    background-color: blue;
+    width: 70px;
+    height: 6px;
+    margin-left: 700px;
+}
+
+.team-container{
+    width:80%;
+    margin: auto;
+    
+    
+}
+.team-image{
+    width:90%;
+    margin: auto;
+    position: relative;
+}
+.team-image img{
+    width:100%
+}
+.team-item{
+    padding:5px 0px;
+    z-index: 1;
+    position: relative;
+    width:30%;
+    border: 2px  solid  rgb(42, 90, 233);
+    text-align: center;
+    float:left;
+}
+.team-overley{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color: rgba(186, 197, 223, 0.5); 
+     visibility: hidden; 
+}
+
+.team-overley a{
+    display: block;
+    color:white;
+    background-color: rgb(42, 90, 233);
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+   
+
+}
+
+.team-info-t1{
+    text-align: center;
+}
+
+.team-info-sp1{
+    text-align: center;
+}
+
+.center{
+    margin:0px 5%
+}
+
+.team-item:hover  .team-overley{
+    visibility: visible;
+}
+
+.team-item::after{
+    content: "";
+    background-color:black; 
+    width:100%;
+    height: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 2s;
+    opacity: 0.5;
+    
+}
+
+.team-item:hover::after{
+    width:100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+
+/*///////////////////////////////////////////////*/
+
+
+/*offer section*/
+
+.offer-heading{
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+
+.offer-line{
+    width:50px;
+    height: 6px;
+    background-color: rgb(42, 90, 233);
+    margin-left:710px;
+
+}
+
+.offer-container{
+    width:80%;
+    margin: auto;
+
+}
+
+.offer-content{
+   
+}
+
+.offer-item{
+    margin:50px 0px 0px 0px;
+    width:30%;
+    line-height: 30px;
+    border:1px solid rgb(42, 90, 233);
+    padding: 10px  20px;
+    height: 150px;
+    float: left;
+    position: relative;
+}
+
+.offer-item  h2{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.offer-item  i{
+    word-spacing: 20px;
+    font-size: 29px;
+    color:rgb(42, 90, 233);
+}
+
+.offer-p{
+    margin-left: 40px;
+}
+
+.offer-center{
+    margin:50px 50px 0px 50px;
+}
+
+
+.offer-item:hover  h2{
+   color:white;
+}
+
+.offer-item:hover  p{
+    color:white;
+ }
+
+ .offer-item:hover  i{
+    color:black;
+ }
+
+
+ .offer-item::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgb(42, 90, 233);
+    transition: 1s;
+    z-index: -1;
+ }
+
+
+ .offer-item:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+/*//////////////////////////////////////////////////////*/
+
+/*why-section*/
+
+.why-container{
+    width:80%;
+    margin: auto;
+    margin-top: 700px;
+}
+
+.why-line{
+    width:60px;
+    height: 6px;
+    background-color: rgb(42, 90, 233);
+    margin: 10px 0;
+}
+
+.why-info-t{
+    letter-spacing: 2px;
+    
+}
+
+.why-info-p{
+    letter-spacing: 2px;
+    font-weight:bold;
+    margin:30px 0px;
+}
+
+.why-info   i{
+    color: rgb(42, 90, 233);
+}
+
+.why-photo{
+   display: block;
+   margin-left: auto;
+   margin-top:-150px;
+    
+}
+
+.why-points{
+    margin:10px 0px;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.center-point{
+    margin: 10px  10px;
+}
+.first-point{
+    background-color: rgb(42, 90, 233);
+}
+.move-point{
+    margin-left: 900px;
+}
+
+.why-points:hover{
+    background-color: rgb(42, 90, 233);
+}
